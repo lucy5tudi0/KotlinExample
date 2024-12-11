@@ -1,0 +1,6 @@
+name: KotlinExample
+main: kr.itskimlot.kotlinexample.KotlinExample
+version: 1.0
+author: ITSK1MLOT
+description: Minecraft Java Plugin Example using Kotlin
+api-version: 1.17

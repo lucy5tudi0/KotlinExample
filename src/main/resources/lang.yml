@@ -1,0 +1,20 @@
+# [ KotlinExample | 1.0 ] by ITSK1MLOT - Minecraft Java Plugin Example using Kotlin
+prefix: "<dark_gray>[<gold>KotlinExample <dark_gray>]"
+
+# ─────────────────────────────────────────────────────────────────
+
+
+# ─────────────────────────────────────────────────────────────────
+help:
+  - "<yellow>----- <gold>KotlinExample <yellow>-----"
+  - "<green>■ <gold>/예시 도움말 <gray>- <yellow>도움말 메시지를 표시합니다."
+  - "<yellow>----- <gold>KotlinExample <yellow>-----"
+alert:
+  new_update:
+    - "<gray>새로운 업데이트를 다운로드할 수 있습니다: <green>%new_version% <gray>(<red>%now_version%<gray>)"
+    - "<gray>다운로드 링크: <aqua><click:open_url:%url%>%url%<reset>"
+errors:
+  no_permission: "<red>이 명령어를 사용할 권한이 없습니다."
+  only_player: "<red>이 명령어는 플레이어만 사용할 수 있습니다."
+  invalid_usage: "<red>잘못된 사용법입니다. 도움말을 확인하려면 <click:run_command:/예시 도움말><aqua>[<yellow>/예시 도움말<aqua>]<reset>을 사용하세요."
+  invalid_player: "<red>플레이어를 찾을 수 없습니다."
