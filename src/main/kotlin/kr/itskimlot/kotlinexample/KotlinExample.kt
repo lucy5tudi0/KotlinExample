@@ -59,8 +59,14 @@ class KotlinExample: JavaPlugin(), Listener {
         return YamlConfiguration.loadConfiguration(file)
     }
 
-    fun getMessage(key: String): String {
-        return lang.getString("prefix") + lang.getString(key)
+    fun getMessage(key: String): List<String> {
+        val list: MutableList<String> = mutableListOf()
+        when (val msg = lang.get(key)) {
+            is String -> list.add(lang.getString("prefix") + msg)
+            is List<*> -> msg.forEach { list.add(lang.getString("prefix") + it) }
+            else -> listOf("<red>Unknown Error: $key")
+        }
+        return list
     }
 
     fun String.toMiniMessage(): Component {
